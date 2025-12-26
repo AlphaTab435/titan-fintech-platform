@@ -15,7 +15,8 @@ spec:
     spec:
       containers:
       - name: api
-        image: nginx:alpine # Placeholder until we build our Python app
+        # image: nginx:alpine # Placeholder until we build our Python app
+        image: titan-payment-service:v1
         ports:
         - containerPort: 80
         resources:
