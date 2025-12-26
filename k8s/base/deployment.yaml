@@ -16,7 +16,9 @@ spec:
       containers:
       - name: api
         # image: nginx:alpine # Placeholder until we build our Python app
-        image: titan-payment-service:v1
+        # image: titan-payment-service:v1
+        image: muhammadtabish/titan-payment-service:latest
+        imagePullPolicy: Always  # <--- CRITICAL: Forces K8s to check for updates
         ports:
         - containerPort: 80
         resources:
