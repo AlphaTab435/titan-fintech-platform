@@ -5,6 +5,7 @@ on:
     branches: [ "main" ]
     paths:
       - 'app/**' # Only run when App code changes, ignore Terraform changes
+  workflow_dispatch:
 
 jobs:
   build:

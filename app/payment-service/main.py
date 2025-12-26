@@ -6,7 +6,7 @@ app = FastAPI()
 
 @app.get("/")
 def read_root():
-    return {"status": "Titan Fintech API is Online", "version": "1.0.0"}
+    return {"status": "Titan Fintech API is Online", "version": "1.0.1"}
 
 @app.get("/transaction")
 def create_transaction():
