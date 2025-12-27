@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: payment-config
+  namespace: titan-fintech
+data:
+  APP_VERSION: "2.0.0-Enterprise"
+  BANK_NAME: "Titan Bank"
