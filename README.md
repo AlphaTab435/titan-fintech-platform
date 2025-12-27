@@ -24,6 +24,8 @@ Titan is a fully automated Fintech platform designed to demonstrate **Senior Dev
 | **App Logic** | Python (FastAPI) | Microservices API (Payment Processing) |
 | **CI/CD** | GitHub Actions | Docker Build & Push Automation |
 | **Monitoring** | Prometheus/Grafana | CPU/Memory Metrics & Dashboards |
+| **Configuration Management** | ConfigMap | Application configuration (Version/Env) decoupled from code using Kubernetes ConfigMaps |
+
 
 ---
 
