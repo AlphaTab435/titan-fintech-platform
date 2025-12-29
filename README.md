@@ -1,7 +1,7 @@
 # 🏦 Titan Fintech Platform
 
 ### 🎥 Watch the Demo
-[![Titan Fintech Demo](docs/demo-thumbnail.jpg)](https://www.youtube.com/watch?v=plbEqEMhEk4)
+[![Titan Fintech Demo](docs/demo-thumbnail.png)](https://www.youtube.com/watch?v=plbEqEMhEk4)
 > *Click to watch the local validation of the Orchestration & Observability layer.*
 
 > A production-grade, PCI-DSS compliant banking infrastructure on AWS EKS, managed via Terraform and GitOps.
