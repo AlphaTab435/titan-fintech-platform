@@ -1,5 +1,9 @@
 # 🏦 Titan Fintech Platform
 
+### 🎥 Watch the Demo
+[![Titan Fintech Demo](docs/demo-thumbnail.jpg)](https://www.youtube.com/watch?v=plbEqEMhEk4)
+> *Click to watch the local validation of the Orchestration & Observability layer.*
+
 > A production-grade, PCI-DSS compliant banking infrastructure on AWS EKS, managed via Terraform and GitOps.
 
 ![Architecture](docs/architecture-v1.png)
@@ -67,12 +71,17 @@ kubectl get pods -n titan-fintech
 ```bash
 sh k8s/helm/monitoring-setup.sh
 ```
-### 🔄 CI/CD Pipeline
-Every commit to the app/ directory triggers:
-Build: Creates a Docker container.
-Tag: Tags with latest and v{run_number} for rollback safety.
-Push: Uploads to Docker Hub.
-Deploy: Updates the Kubernetes manifest.
-### 👤 Author
-Muhammad Tabish - DevOps & Cloud Engineer
-LinkedIn | GitHub
+## 🔄 CI/CD Pipeline
+The project utilizes a **GitOps-ready** workflow via GitHub Actions:
+1.  **Trigger:** Pushes to the `app/` directory initiate the pipeline.
+2.  **Build:** Creates a Docker container using the Python FastAPI source.
+3.  **Tag:** Applies immutable tags (`v{run_number}`) for rollback safety and `latest` for convenience.
+4.  **Registry:** Pushes the artifact to **Docker Hub** (Public Registry).
+5.  **Deployment:** Kubernetes clusters pull the authenticated image using `imagePullPolicy: Always`.
+
+## 👤 Author
+**Muhammad Tabish** - *Platform & DevOps Engineer*
+
+*   **Portfolio:** [GitHub Profile](https://github.com/AlphaTab435)
+*   **Connect:** [LinkedIn](https://www.linkedin.com/in/muhammad-tabish-248535212/)
+*   **Contact:** tabish7280@gmail.com
